@@ -1,0 +1,372 @@
+*{
+    font-family: 'Ubuntu', sans-serif;
+    scroll-behavior: smooth;
+    
+}
+body{   
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+nav{
+    display: flex;
+    padding: 1% 6%;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    -webkit-position: sticky;
+    top: 0%;
+
+}
+nav img{
+    width: 300px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+}
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: normal;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #54FEBD;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+
+ nav .fa{
+    display: none;
+}
+
+
+
+
+.container{
+    width: 100%;
+    height: 100%; 
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+section{
+    /* display: flex; */
+    /* display:flex;
+    align-items: center;
+    justify-content: left; */
+    width: 100vw;
+    height: 100vh;
+    scroll-snap-align: start;
+    overflow: hidden;
+}
+.bod{
+    display: flex;
+}
+section:nth-of-type(1){
+    background-color:black;
+    color: white;
+}
+section:nth-of-type(2){
+    background-color: black;
+    color: white;
+}
+section:nth-of-type(3){
+    background-color: black;
+    color: white;
+}
+section:nth-of-type(4){
+    background-color: black;
+    color: white;
+}
+section:nth-of-type(5){
+    background-color: black;
+    color: white;
+}
+.lefttitle{
+    display: flex;
+}
+.lefttitle h1{
+    font-size: 190px;
+    font-weight: bold;
+    color: #999999;
+    transform-origin: top left;
+    left:0;
+    top:100%;
+    transform: rotate(-90deg)translateX(-80%);
+}
+.foottitle h1{
+    font-size: 500px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.1);
+    
+}
+
+
+
+/* ============HOME============== */
+.home{
+    min-height: 120vh;
+}
+.home .lefttitle{
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20%;
+    margin-top: 10%;
+}
+.home .rightcontent{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.home .rightcontent .vector{
+    margin-left: -40%;
+    margin-top: -55%;
+}
+.home .rightcontent .vector img{
+    width: 450%;
+}
+
+.home .rightcontent .texts{
+    margin-bottom: 20%;
+    margin-left: 20%;
+    font-size: 30px;
+}
+.home .rightcontent .texts h4{
+    font-size: 20px;
+    font-weight: normal;
+    color: black;
+    background-color: white;
+    margin-right: 85%;
+    margin-bottom: -5%;
+}
+.home .rightcontent .texts h2{
+    font-size: 80px;
+    font-weight: bold;
+    margin-bottom: -3%;
+    color: #54FEBD;
+}
+.home .rightcontent .texts h3{
+    font-size: 30px;
+    font-weight: bold;
+}
+.home .rightcontent .texts p{
+    font-size: 25px;
+    font-weight: lighter;
+    margin-right: 40%;
+}
+.home .rightcontent .sns{
+    display: flex;
+    flex-direction: column;
+    margin-top: -10%;
+}
+.home .rightcontent .sns img{
+    margin-top: 30%;
+    margin-left: 30%;
+    width: 60%;
+}
+.home .foottitle{
+    display: flex;
+}
+.home .foottitle h1{
+    margin-top: -30%;
+    margin-left: -10%;
+}
+.home .foottitle img{
+    width: 15%;
+    height: 15%;
+    margin-top: -20%;
+    margin-left: 5%;
+}
+
+
+
+
+
+
+
+/* ============ABOUT ME============== */
+.about{
+    min-height: 120vh;
+}
+.about .lefttitle{
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30%;
+    margin-top: 5%;
+}
+.about .rightcontent{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+
+.about .rightcontent .texts{
+    margin-top: 0%;
+    margin-left: -70%;
+    margin-right: 100%;
+    font-size: 30px;
+}
+.about .rightcontent .images{
+    margin-top: -45%;
+    
+}
+.about .rightcontent .images img{
+    width: 40%;
+    margin-left: 40%;
+}
+.about .rightcontent .vector{
+    margin-top: -30%;
+}
+.about .rightcontent .vector img{
+    width: 300%;
+}
+.about .foottitle{
+    margin-top: -55%;
+    margin-left: -10%;
+}
+
+/* ============SERVICES============== */  
+.services{
+    min-height: 120vh;
+}
+.services .lefttitle{
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30%;
+    margin-top: -13%;
+}
+.services .rightcontent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: -25%;
+}
+.services .rightcontent .vector{
+    margin-bottom: 0%;
+    margin-left: -100%;
+}
+.services .rightcontent .vector img{
+    width: 200%;
+}
+.services .rightcontent .texts{
+    margin-top: -10%;
+    margin-left: -100%;
+    margin-right: 0%;
+}
+.services .texts h1{
+    font-size: 90px;
+    color: black;
+    text-align: left;
+    background-color: white;
+    /* margin-top: 40%; */
+}
+.services .texts h2{
+    font-size: 90px;
+    color: black;
+    text-align: left;
+    font-style: italic;
+    font-weight:normal;
+    background-color: white;
+    margin-top: -5%;
+}
+.services .texts h3{
+    font-size: 90px;
+    color: black;
+    text-align: left;
+    font-weight:lighter;
+    background-color: white;
+    margin-top: -5%;
+}
+.services .texts h4{
+    font-size: 90px;
+    color: black;
+    text-align: left;
+    font-style:italic;
+    background-color: white;
+    margin-top: -6%;
+}
+.services .foottitle{
+    margin-top: 8%;
+    margin-left: -85%;
+
+}
+/* ============MYWORKS============== */  
+.myworks{
+    min-height: 120vh;
+}
+.myworks .lefttitle{
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30%;
+    margin-top: 5%;
+}
+.myworks .foottitle{
+    margin-top: -55%;
+    margin-left: -10%;
+
+}
+/* ============CONTACTME============== */  
+.contact{
+    min-height: 120vh;
+}
+.contact .lefttitle{
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30%;
+}
+
+.contact .rightcontent .logo{
+    display: flex;
+    margin-left: -90%;
+}
+.contact .rightcontent .logo img{
+    margin-right: 5%;
+    margin-top: 30%;
+}
+.contact .rightcontent .contactde{
+    margin-left: -190%;
+    justify-content: center;
+    text-align: center;
+}
+.contact .rightcontent .contactde h1{
+    font-size: 50px;
+    color: #54FEBD;
+}
+.contact .rightcontent .contactde h2{
+    font-size: 40px;
+}
+.contact .foottitle{
+    margin-top: -50%;
+    margin-left: -10%;
+
+}
+
+
+
+/* .reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+.reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
+} */
